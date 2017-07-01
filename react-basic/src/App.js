@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import ItemsList from './components/ItemsList'
 
 class App extends Component {
   render() {
+    //We take only the 100 first items
+    var items = this.state.items.slice(0,100);
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <ItemsList items={items}/>
       </div>
     );
   }

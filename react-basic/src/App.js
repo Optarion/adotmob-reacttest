@@ -18,10 +18,10 @@ class App extends Component {
     var url = "https://jsonplaceholder.typicode.com/photos";
     var xmlhttp = new XMLHttpRequest();
 
-    var itemsRequest =  new Promise(function(resolve, reject){
+    return new Promise(function(resolve, reject){
       xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
-          if (xmlhttp.status == 200) {
+        if (xmlhttp.readyState === XMLHttpRequest.DONE ) {
+          if (xmlhttp.status === 200) {
             resolve(JSON.parse(xmlhttp.response));
           }
         }

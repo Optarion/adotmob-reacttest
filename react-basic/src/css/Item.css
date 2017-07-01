@@ -1,0 +1,10 @@
+.Item {
+	text-align: center;
+	border-bottom: solid 1px lightgrey;
+	border-left: solid 1px lightgrey;
+}
+
+.Item a {
+	display: block;
+	padding: 1em;
+}

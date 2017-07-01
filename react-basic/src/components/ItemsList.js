@@ -7,7 +7,7 @@ export default class ItemsList extends Component {
 		return(
 			<div className="ItemsList">
 				{items.map(function(data){
-					return <Item content={data}/>
+					return <Item key={data.id} content={data}/>
 				})}
 			</div>
 		);
